@@ -1,14 +1,12 @@
 const express = require('express')
 const app = express('')
+const configApp = require('./configurations/config')
+const middlewareApp = require('./middlewares/middlewares')
+const updatabase = require('./database/database')
 
-require('./database/database');
-require('./middlewares/middleware')
-require('./configuration/config')
-
-
-// app.use('/', require('./routes/index'));
-app.use('/', require('./routes/perfil'));
-
+configApp(app)
+updatabase()
+middlewareApp(app)
 
 
-
+app.use('/', require('./routes/index'));
