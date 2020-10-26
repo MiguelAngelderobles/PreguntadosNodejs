@@ -7,13 +7,15 @@
     "connect-flash": "^0.1.1",
     "express": "^4.17.1",
     "express-session": "^1.17.1",
-    "mongoose": "^5.10.7",
+    "http": "0.0.1-security",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.10",
     "morgan": "^1.10.0",
     "pug": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "start":"node src/app.js",
+    "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
   "keywords": [],
